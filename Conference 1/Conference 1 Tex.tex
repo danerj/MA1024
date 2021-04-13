@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\setlength{\parindent}{0pt}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\section*{Example 1}
+
+Find and sketch a graph of the (natural) domain of the function
+$$f(x,y) = \text{ln}(\sqrt{5} - \sqrt{x^2+y^2-4}) \;.$$.
+
+The argument of a square root must be nonnegative. So we need:
+\begin{align*}
+x^2+y^2 - 4 &\geq 0\\
+x^2 + y^2 & \geq 4 \\
+x^2 + y^2 & \geq 2^2 \quad \quad (1)
+\end{align*}
+
+This is the region in the Cartesian plane along the circle of radius 2 centered at the origin as well as the region outside of that same circle.\\
+
+
+The argument of the natural logarithm must be strictly positive. So we also need:
+
+\begin{align*}
+&\sqrt{5} - \sqrt{x^2 + y^2 - 4} > 0\\
+&\sqrt{5}  > \sqrt{x^2 + y^2 - 4} \\
+&5  > x^2 + y^2 - 4\\
+&3^2= 9  > x^2 + y^2 \quad \quad (2)
+\end{align*}
+
+This is the region in the Cartesian plane within the circle of radius 3 centered at the origin but not including the set of points that lie on the circle.\\
+
+Both equation (1) and equation (2) need to hold for the function to be defined. Imposing both requirements gives an inequality to describe the natural domain of $f$, $D$, which is:
+
+$$D = \{(x,y) \; | \:  4 \leq x^2 +y^2 < 9 \}$$
+\newpage
+
+
+
+
+\section*{Example 2}
+
+Consider the level surface given by $x^2-y^2+z^2 = 2$. Make a plot for:\\
+
+(a) the slice $x = 2$.\\
+
+This will give a hyperbola in the $y-z$ plane. To see what the graph will look like, it's helpful to put the equation into standard hyperbola form:
+$$x = 2 \implies 2^2 - y^2 + z^2 = 2$$
+$$\frac{y^2}{\sqrt{2}^2} - \frac{z^2}{\sqrt{2}^2} = 1$$
+\vspace{4cm}
+
+(b) the slice $x = 0$. \\
+
+This will also give a hyperbola in the $y-z$ plane so we can put the equation in standard form again:
+
+$$ x = 0 \implies -y^2 + z^2 = 2$$
+$$\frac{z^2}{\sqrt{2}^2} - \frac{y^2}{\sqrt{2}^2} = 1$$
+\newpage
+
+
+\section*{Group Work}
+
+Describe the domain of the function $f(x,y) = \sqrt{x} + \sqrt{y}$.\\
+
+We need the argument of the square root function to be nonnegative in order to have real valued outputs, meaning that both $x\geq 0$ and $y \geq 0$ must hold. The domain, $D$ of $f$ is then:
+
+$$D = \{(x,y) \; | \: x\geq 0, y\geq 0\} \; .$$
+
+This is quadrant 1 of the $x-y$ plane (including the portions of the axes that lie in the first quadrant). 
+
+\end{document}
